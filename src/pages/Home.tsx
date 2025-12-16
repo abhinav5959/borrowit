@@ -184,6 +184,9 @@ const Home: React.FC = () => {
                             <div className="nav-item" onClick={() => navigate('/my-requests')}>
                                 <List size={20} /> My Requests
                             </div>
+                            <div className="nav-item" onClick={() => navigate('/messages')}>
+                                <MessageCircle size={20} /> Messages
+                            </div>
                             <div className="nav-item" onClick={() => navigate('/profile')}>
                                 <UserCircle size={20} /> Profile
                             </div>

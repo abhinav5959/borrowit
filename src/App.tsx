@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import Home from './pages/Home';
 import MyRequests from './pages/MyRequests';
 import Profile from './pages/Profile';
+import Messages from './pages/Messages';
 import NotificationListener from './components/NotificationListener';
 import './styles/global.css';
 
@@ -38,6 +39,11 @@ function App() {
             <Route path="/profile" element={
               <PrivateRoute>
                 <Profile />
+              </PrivateRoute>
+            } />
+            <Route path="/messages" element={
+              <PrivateRoute>
+                <Messages />
               </PrivateRoute>
             } />
           </Routes>
